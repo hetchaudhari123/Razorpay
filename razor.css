@@ -1,0 +1,100 @@
+.card:hover {
+    filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+}
+
+.card:hover img{
+        background: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+        box-shadow: 0px 2px 22px rgba(202, 202, 202, 0.25);
+}
+
+.card::after{
+    content: " ";
+    position: absolute;
+    z-index: 101;
+    right: 0px;
+    bottom: 36px;
+    height: 60px;
+    width: 109px;
+    background-image: url(images/features-wave.svg);
+    background-size: cover;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.card:hover::after{
+    opacity: 1;
+}
+
+.card-2::after{
+    content: " ";
+    position: absolute;
+    z-index: 101;
+    right: 0px;
+    bottom: 36px;
+    height: 4rem;
+    width: 7rem;
+    background-image: url(images/features2-wave.svg);
+    background-size: cover;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.card-2:hover::after{
+    opacity: 1;
+}
+
+.card-2:hover img{
+    background: linear-gradient(188.57deg, #2095ff -16.05%, #6416ff 116.32%);
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease;
+}
+
+.card-2:hover{
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+    transition: all 200ms ease;
+}
+
+.card-2:hover >svg{
+    stroke:black;
+    transition: all 200ms ease;
+}
+
+/* 
+.extra {
+    background-color: hsla(158, 52.7%, 59.4%, 1);
+    height: 119%;
+    width: 28%;
+    top: -5px;
+    right: 25px;
+    position: absolute;
+    /* background-color: var(--chakra-colors-green-400); */
+    /* transform: skew(20deg);
+    opacity: 0.9;
+} */ 
+
+
+.back{
+    background-position: -500px 0px;
+}
+
+.core-features{
+    background-size: 100% 100%;
+    padding-top:12rem;
+    padding-bottom:12rem;
+}
+
+
+.CompanyList{
+    animation: 10s infinite linear moveCompany;
+    
+}
+
+@keyframes moveCompany {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-50%;
+    }
+}
+
